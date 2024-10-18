@@ -9,6 +9,22 @@
 </head>
 <body>
 
+    <div class="moon-phase-display">
+        <img id="moon-image" src="./images/8.png" alt="Moon">
+        <p id="moon-phase-name"></p>
+        <h1 id="selected-date"></h1>
+    </div>
+
+    <div class="calendar">
+        <header>
+            <h2 id="current-month"></h2>
+            <div>
+                <button id="prev-month" onclick="prevMonth()">&#60;</button>
+                <button id="next-month" onclick="nextMonth()">&#62;</button>
+            </div>
+        </header>
+        <div id="calendar-grid"></div>
+    </div>
 
     <script src="./javascript/app.js"></script>
 </body>

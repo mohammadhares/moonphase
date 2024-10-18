@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #090f17;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+
+.moon-phase-display{
+    text-align: center;
+    margin-top: 100px !important;
+}
+
+#moon-phase-name{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#selected-date{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.calendar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+header{
+    background-color: #52303071;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+header button{
+    background-color: rgb(37, 49, 80);
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#calendar-grid{
+    display: grid;
+    grid-template-columns: repeat(7 , 50px);
+    gap: 5px;
+}
+
+#calendar-grid div{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(30, 42, 59);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#calendar-grid div:hover{
+    background-color: rgb(48, 62, 80);
+}
