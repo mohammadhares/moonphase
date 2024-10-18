@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moon Phase Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 <body>
-
+    <div class="moving-clouds"></div>
     <div class="moon-phase-display">
-        <img id="moon-image" src="./images/8.png" alt="Moon">
+        <img src="./images/8.png" alt="Moon Phase" id="moon-image">
         <p id="moon-phase-name"></p>
         <h1 id="selected-date"></h1>
     </div>
@@ -19,11 +21,17 @@
         <header>
             <h2 id="current-month"></h2>
             <div>
-                <button id="prev-month" onclick="prevMonth()">&#60;</button>
-                <button id="next-month" onclick="nextMonth()">&#62;</button>
+                <button class="indicator" onclick="prevMonth()">
+                    <i class="fa fa-caret-left"></i>
+                </button>
+                <button  class="indicator" onclick="nextMonth()">
+                    <i class="fa fa-caret-right"></i>
+                </button>
             </div>
         </header>
-        <div id="calendar-grid"></div>
+        <div id="calendar-grid">
+            <!-- Calendar grid will be populated here -->
+        </div>
     </div>
 
     <script src="./javascript/app.js"></script>
