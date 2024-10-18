@@ -100,6 +100,6 @@ function showCurrentPhase() {
 showCurrentPhase()
 createCalendar(currentMonth, currentYear)
 
-window.onload = () => {
-    document.body.style.height = `${window.innerHeight}px`
-}
+// window.onload = () => {
+//     document.body.style.height = `${window.innerHeight}px`
+// }
