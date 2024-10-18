@@ -98,13 +98,14 @@ header .indicator .fa{
 .moving-clouds{
     background: url('./../images/clouds.png');
     position: absolute;
-    top: 100px;
-    left: 0;
+    top: 10px;
     width: 250em;
-    height: 50em;
+    height: 80em;
     animation: cloudLoop 50s linear infinite;
     overflow-x: hidden;
 }
+
+
 
 #moon-image {
     transition: all 3s;
